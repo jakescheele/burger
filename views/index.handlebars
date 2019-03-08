@@ -1,0 +1,39 @@
+{{!-- * Setup the `index.handlebars` to have the template that Handlebars can render onto.
+
+     * Create a button in `index.handlebars` that will submit the user input into the database --}}
+
+<div class='container'>
+
+     <br><br>
+
+     <div class='jumbotron'>
+
+          <img class='p3' src='/assets/img/burger.png' width=200/>
+
+          <h1 class='p3'>Eat-Da-Burger!</h1>
+
+
+          <ul>
+               {{#each burgers}}
+               {{/each}}
+          </ul>
+
+
+
+          <div>
+               <form class='form'>
+                    <div class='form-group'>
+                         <label for='bu'>Burger:</label>
+                         <input type='text' id='bu' name='burger_name'>
+                    </div>
+
+                    <button type='submit'>Submit</button>
+
+               </form>
+
+               <p class='text-center'>Enter a burger you want to eat and Click the 'Submit' button.</p>
+
+          </div>
+     </div>
+
+</div>
